@@ -13,9 +13,11 @@ fun main() {
         println(info)
 
         // Дополнительные пунты "По желанию"
-        var isChild2: Boolean = (height>150.0) || (weight>40)
-        var info2: String = "Name: $firstName; Last name: $lastName; height: $height; weight: $weight; Is he child? - $isChild2"
-        println(info2)
+        height = 145.0
+        weight = 35F
+        isChild = (height<150.0) || (weight<40)
+        info = "Name: $firstName; Last name: $lastName; height: $height; weight: $weight; Is he child? - $isChild"
+        println(info)
 
 
 
