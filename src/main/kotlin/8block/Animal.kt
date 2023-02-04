@@ -7,7 +7,7 @@ open class Animal(var energy: Int, var weight: Int, var maxAge: Int, val name: S
     var currentAge: Int = 0
 
     fun isTooOld(): Boolean {
-        if (currentAge >= maxAge)
+        if (currentAge > maxAge)
             return true
         else return false
     }
