@@ -54,7 +54,7 @@ fun main() {
             println("Old animals - ${emptyList[j].name}")
             natureReserve.list.remove(emptyList[j])
         }
-
+        println(natureReserve.list.size)
 
         if (natureReserve.list.size == 0) {
             println("All animals are dead")

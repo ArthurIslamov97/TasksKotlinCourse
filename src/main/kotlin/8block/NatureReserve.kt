@@ -12,7 +12,10 @@ class NatureReserve {
         Fish(1, 2, 1, "Marlin"),
         Fish(1, 1, 1, "Artur"),
         Dog(5, 2, 2, "Hatiko"),
-        Dog(5, 3, 1, "Chubaka")
+        Dog(5, 3, 1, "Chubaka"),
+        Woman(10, 50, 90, "Wife1"),
+        Woman(15, 60, 80, "Wife2"),
+        Woman(20, 55, 85, "Wife3")
     )
 
 }
