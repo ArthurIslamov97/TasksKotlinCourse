@@ -4,15 +4,10 @@ object Converters {
 
     private val converters = hashMapOf<String, CurrencyConverter>(
         "USD" to UsdConverter(),
-        "EUR" to EurConverter()
+        "EUR" to EurConverter(),
+        "ZWD" to ZwdConverter()
     )
 
-    val zwdConverter = object : CurrencyConverter {
-        override val currencyCode = "ZWD"
-        override fun convertToRub(amount: Double): Double {
-            return amount / 0.24
-        }
-    }
 
     fun get(currencyCode: String): CurrencyConverter {
         return converters[currencyCode] ?: object : CurrencyConverter {
